@@ -1,8 +1,7 @@
 <?php
-namespace IW\Workshop;
-use PHPUnit\Framework\Exception;
-use PHPUnit\Framework\Error\Error;
+namespace IW\Tests\Workshop;
 use PHPUnit\Framework\TestCase;
+use IW\Workshop\Calculator;
 use InvalidArgumentException;
 use TypeError;
 
@@ -11,7 +10,7 @@ class CalculatorTest extends TestCase {
     $calculator = new Calculator();
     $result = $calculator->add(3.552, 5.226);
 
-    $this->assertEquals(3.552 + 5.226, $result);
+    $this->assertEquals(8.778, $result);
   }
 
   public function testAddStrings() {

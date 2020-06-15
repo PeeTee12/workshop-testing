@@ -1,5 +1,6 @@
 <?php
-namespace IW\Workshop;
+namespace IW\Tests\Workshop;
+use IW\Workshop\DateFormatter;
 use PHPUnit\Framework\TestCase;
 use DateTime;
 
